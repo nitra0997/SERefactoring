@@ -1,8 +1,11 @@
+package Model;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class Customer {
+import Controller.Rental;
+
+public class Customer {
 	private String name;
 	private List<Rental> rentals = new ArrayList<Rental>();
 
