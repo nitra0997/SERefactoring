@@ -1,8 +1,5 @@
-/Customer.class
-/Movie.class
-/Program.class
-/Rental.class
-/MoviePriceCode.class
 /Model/
-/Controller/
 /View/
+/controller/
+/model/
+/view/

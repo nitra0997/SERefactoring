@@ -1,9 +1,9 @@
-package View;
-import Controller.Rental;
-import Model.ChildrensMovie;
-import Model.Customer;
-import Model.Movie;
-import Model.NewRelease;
+package view;
+import controller.Rental;
+import model.ChildrensMovie;
+import model.Customer;
+import model.Movie;
+import model.NewRelease;
 
 /**
  * Note that Java console applications need to be run through the java runtime

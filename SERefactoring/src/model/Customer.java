@@ -1,9 +1,9 @@
-package Model;
+package model;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Controller.Rental;
+import controller.Rental;
 
 public class Customer {
 	private String name;

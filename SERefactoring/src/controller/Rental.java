@@ -1,6 +1,6 @@
-package Controller;
-import Model.Movie;
-import Model.NewRelease;
+package controller;
+import model.Movie;
+import model.NewRelease;
 
 public class Rental {
 	private Movie movie;
