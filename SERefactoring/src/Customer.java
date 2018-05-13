@@ -1,7 +1,5 @@
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Enumeration;
 import java.util.List;
 
 class Customer {
@@ -23,21 +21,16 @@ class Customer {
 	public String statement() {
 		double totalAmount = 0;
 		int frequentRenterPoints = 0;
-		Enumeration<Rental> enum_rentals = Collections.enumeration(rentals);
 		String result = "Rental Record for " + this.getName() + "\n";
 		result += "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n";
 
-		while (enum_rentals.hasMoreElements()) {
-			double thisAmount = 0;
-			Rental rental = (Rental) enum_rentals.nextElement();
-			thisAmount = rental.getAmount();
-			frequentRenterPoints++;
-			if ((rental.getMovie().getPriceCode() == Movie.NEW_RELEASE) && rental.getDaysRented() > 1)
-				frequentRenterPoints++;
+		for (Rental rental : rentals) {
+			totalAmount += rental.getAmount();
+			frequentRenterPoints += rental.getFrequentRenterPoints();
 			result += "\t" + rental.getMovie().getTitle() + "\t" + "\t" + rental.getDaysRented() + "\t"
-					+ String.valueOf(thisAmount) + "\n";
-			totalAmount += thisAmount;
+					+ String.valueOf(rental.getAmount()) + "\n";
 		}
+		
 		result += "Amount owed is " + String.valueOf(totalAmount) + "\n";
 		result += "You earned " + String.valueOf(frequentRenterPoints) + " frequent renter points";
 		return result;
