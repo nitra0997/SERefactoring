@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cb0ed9fe26474fb497ee7eca20f73452)](https://www.codacy.com/app/nitra0997/SERefactoring?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nitra0997/SERefactoring&amp;utm_campaign=Badge_Grade)
+
 # SERefactoring
 This repository contains the "Refactoring"-Assignment for our Software-Engineering lecture, based on the example from Martin Fowler
 
